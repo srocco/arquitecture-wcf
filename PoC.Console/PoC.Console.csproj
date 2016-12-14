@@ -47,16 +47,6 @@
   <ItemGroup>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Service References\htppsService\Reference.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </Compile>
-    <Compile Include="Service References\HttpServices\Reference.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config">
@@ -64,89 +54,27 @@
       <SubType>Designer</SubType>
     </None>
     <None Include="Properties\DataSources\PoC.Entities.Product.datasource" />
-    <None Include="Service References\htppsService\ProductService.wsdl" />
-    <None Include="Service References\htppsService\ProductService.xsd">
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="Service References\htppsService\ProductService1.xsd">
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="Service References\htppsService\ProductService2.xsd">
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="Service References\htppsService\ProductService3.xsd">
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="Service References\htppsService\ProductService4.xsd">
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="Service References\HttpServices\ProductService.wsdl" />
-    <None Include="Service References\HttpServices\ProductService.xsd">
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="Service References\HttpServices\ProductService1.xsd">
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="Service References\HttpServices\ProductService2.xsd">
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="Service References\HttpServices\ProductService3.xsd">
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="Service References\HttpServices\ProductService4.xsd">
-      <SubType>Designer</SubType>
-    </None>
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Service References\" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\PoC.Agents\PoC.Agents.csproj">
+      <Project>{7c910ff2-725a-4b72-bddb-2bc46f1dab0f}</Project>
+      <Name>PoC.Agents</Name>
+    </ProjectReference>
     <ProjectReference Include="..\PoC.Entities\PoC.Entities.csproj">
       <Project>{9b2d6b81-3703-4d23-9cea-95ccf1b54ce8}</Project>
       <Name>PoC.Entities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PoC.Fwk\PoC.Fwk.csproj">
+      <Project>{75dd04c9-2ebb-406d-a136-0834ef776781}</Project>
+      <Name>PoC.Fwk</Name>
     </ProjectReference>
     <ProjectReference Include="..\PoC.Services.Contracts\PoC.Services.Contracts.csproj">
       <Project>{1ad6b32c-c425-44c7-adf6-95b825e4bdca}</Project>
       <Name>PoC.Services.Contracts</Name>
     </ProjectReference>
-    <ProjectReference Include="..\PoC.Services.Implementations\PoC.Services.Implementations.csproj">
-      <Project>{fb42c001-9751-4c5b-a8d7-951b1733dc04}</Project>
-      <Name>PoC.Services.Implementations</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <WCFMetadataStorage Include="Service References\htppsService\" />
-    <WCFMetadataStorage Include="Service References\HttpServices\" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Service References\htppsService\ProductService.disco" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Service References\htppsService\configuration91.svcinfo" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Service References\htppsService\configuration.svcinfo" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Service References\htppsService\Reference.svcmap">
-      <Generator>WCF Proxy Generator</Generator>
-      <LastGenOutput>Reference.cs</LastGenOutput>
-    </None>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Service References\HttpServices\ProductService.disco" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Service References\HttpServices\configuration91.svcinfo" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Service References\HttpServices\configuration.svcinfo" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Service References\HttpServices\Reference.svcmap">
-      <Generator>WCF Proxy Generator</Generator>
-      <LastGenOutput>Reference.cs</LastGenOutput>
-    </None>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -43,6 +43,16 @@
     <Compile Include="ProductBusiness.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\PoC.Data\PoC.Data.csproj">
+      <Project>{DC14CD9F-E792-488F-88EC-17C95F9B3CCD}</Project>
+      <Name>PoC.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PoC.Entities\PoC.Entities.csproj">
+      <Project>{9B2D6B81-3703-4D23-9CEA-95CCF1B54CE8}</Project>
+      <Name>PoC.Entities</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

@@ -73,15 +73,6 @@
     <Folder Include="App_Data\" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Web - Copy.config">
-      <SubType>Designer</SubType>
-    </Content>
-    <Content Include="Web - Copy.Debug.config">
-      <DependentUpon>Web - Copy.config</DependentUpon>
-    </Content>
-    <Content Include="Web - Copy.Release.config">
-      <DependentUpon>Web - Copy.config</DependentUpon>
-    </Content>
     <None Include="Properties\PublishProfiles\WCF.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -91,6 +82,10 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\PoC.CrossCutting\PoC.CrossCutting.csproj">
+      <Project>{469072fc-b010-479c-9fb2-e5a4289b917a}</Project>
+      <Name>PoC.CrossCutting</Name>
+    </ProjectReference>
     <ProjectReference Include="..\PoC.Entities\PoC.Entities.csproj">
       <Project>{9b2d6b81-3703-4d23-9cea-95ccf1b54ce8}</Project>
       <Name>PoC.Entities</Name>

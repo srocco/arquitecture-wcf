@@ -44,9 +44,17 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\PoC.Business\PoC.Business.csproj">
+      <Project>{40A7ECCA-2957-4DF8-8D9D-F3D071CCB0A6}</Project>
+      <Name>PoC.Business</Name>
+    </ProjectReference>
     <ProjectReference Include="..\PoC.Entities\PoC.Entities.csproj">
       <Project>{9B2D6B81-3703-4D23-9CEA-95CCF1B54CE8}</Project>
       <Name>PoC.Entities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PoC.Fwk\PoC.Fwk.csproj">
+      <Project>{75DD04C9-2EBB-406D-A136-0834EF776781}</Project>
+      <Name>PoC.Fwk</Name>
     </ProjectReference>
     <ProjectReference Include="..\PoC.Services.Contracts\PoC.Services.Contracts.csproj">
       <Project>{1AD6B32C-C425-44C7-ADF6-95B825E4BDCA}</Project>

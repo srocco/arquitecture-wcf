@@ -10,7 +10,7 @@ namespace PoC.CrossCutting {
 
             Debug.WriteLine("IdentityValidator -  Check user name");
 
-            if ((userName != "test") || (password != "tttttttt")) {
+            if ((userName != "user") || (password != "pass")) {
 
                 Debug.WriteLine("IdentityValidator - Password Wrong!");
 
